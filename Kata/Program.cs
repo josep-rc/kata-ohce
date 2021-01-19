@@ -4,12 +4,12 @@ using Services;
 
 namespace Kata
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             string name = args[0];
-            int hora = DateTime.Now.Hour; 
+            int hora = DateTime.Now.Hour;
             string saludo = Greet.GetGreetTo(name, hora);
 
             // Saludo inicial
@@ -26,7 +26,7 @@ namespace Kata
                 Console.WriteLine(Reverse.GetReverse(entrada));
 
                 // Si es palíndroma sacamos "Bonita palabra"
-                if(IsPalindrome.ItIsPalindrome(entrada))
+                if (IsPalindrome.ItIsPalindrome(entrada))
                 {
                     Console.WriteLine("Bonita palabra");
                 }
@@ -38,7 +38,6 @@ namespace Kata
             // Si escribe Stop
             // Nos despedimos
             Console.WriteLine("Adios " + name);
-
         }
     }
 }

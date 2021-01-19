@@ -14,7 +14,6 @@ namespace ServicesTest
         [InlineData("Pepe", 7, "Buenos dias Pepe")]
         [InlineData("Pepe", 10, "Buenos dias Pepe")]
         [InlineData("Pepe", 12, "Buenas tardes Pepe")]
-
         public void TestGetGreetTo(string name, int hour, string expected)
         {
             Assert.Equal(expected, Greet.GetGreetTo(name, hour));
